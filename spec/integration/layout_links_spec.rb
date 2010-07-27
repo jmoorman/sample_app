@@ -59,7 +59,7 @@ describe "LayoutLinks" do
 
       it "should have a signout link" do
          visit root_path
-         response.should have_tag("a[href=?", signout_path, "Sign out")
+         response.should have_tag("a[href=?]", signout_path, "Sign out")
       end
 
       it "should have a profile link" do
